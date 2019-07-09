@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset='UTF-8' />
+  <title>Suffragist</title>
+  <link href='//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/css/bootstrap-combined.min.css' rel='stylesheet' />
+</head>
+<body class='container'>
+
+<h1>You should visit: <%= @destination %></h1>
+
+<p>Você aceita a sugestão?</p>
+<form action='home' method='post'>
+  <ul class='unstyled'>
+      <li>
+        <label class='radio'>
+          <input type='radio' name='answer' value='yes' id='answer-yes' />
+          Sim
+        </label>
+      </li>
+      <li>
+        <label class='radio'>
+          <input type='radio' name='answer' value='no' id='answer-no' />
+          Não
+        </label>
+      </li>
+  </ul>
+  <button type='submit' class='btn btn-primary'>Cast this vote!</button>
+</form>
+</body>
+</html>
