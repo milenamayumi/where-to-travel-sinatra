@@ -4,8 +4,7 @@ CONTINENTS = ['América', 'Europa', 'África', 'Ásia', 'Oceania', 'Antártida']
 
 get '/destination' do
   content_type 'application/json'
-  @destination = CONTINENTS.sample
-  { destination: @destination }.to_json
+  { destination: CONTINENTS.sample }.to_json
 end
 
 get '/home' do
