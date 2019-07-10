@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset='UTF-8' />
+  <title>Destino</title>
+  <link href="/style.css" rel="stylesheet" type="text/css">
+</head>
+<body class='container'>
+
+<div class='card'>
+  <h1>Você deveria viajar para a <%= @destination %></h1>
+
+  <p>Você aceita a sugestão?</p>
+  <form action='home' method='post'>
+    <ul class='unstyled'>
+      <li>
+        <label class='radio'>
+          <input type='radio' name='answer' value='yes' id='answer-yes' />
+          Sim
+        </label>
+      </li>
+      <li>
+        <label class='radio'>
+          <input type='radio' name='answer' value='no' id='answer-no' />
+          Não
+        </label>
+      </li>
+    </ul>
+    <button type='submit' class='button'>Enviar</button>
+  </form>
+
+</div>
+</body>
+</html>

@@ -9,7 +9,7 @@ end
 
 get '/home' do
   @destination = CONTINENTS.sample
-  erb :home
+  erb :index
 end
 
 post '/home' do
