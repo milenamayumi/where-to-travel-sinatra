@@ -1,9 +1,11 @@
 require 'sinatra'
 
-CONTINENTS = ['Africa', 'Antarctica', 'Asia', 'Europe', 'North America', 'Oceania', 'South America']
+CONTINENTS = ['América', 'Europa', 'África', 'Ásia', 'Oceania', 'Antártida']
 
-get '/' do
-  CONTINENTS.sample
+get '/destination' do
+  content_type 'application/json'
+  @destination = CONTINENTS.sample
+  { destination: @destination }.to_json
 end
 
 get '/home' do
